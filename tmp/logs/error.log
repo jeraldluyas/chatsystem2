@@ -1,0 +1,9 @@
+2013-12-12 20:30:57 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
