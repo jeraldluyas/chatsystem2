@@ -7,3 +7,153 @@ Request URL: /chatsystem2/
 Stack Trace:
 #0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-13 10:56:32 Error: Fatal Error (1): Class 'AppController' not found in [/home/vagrant/works/chatsystem2/Controller/HomeController.php, line 5]
+2013-12-13 10:56:32 Error: [FatalErrorException] Class 'AppController' not found
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', '/home/vagrant/w...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', '/home/vagrant/w...', 5, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', '/home/vagrant/w...', 5, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 10:59:02 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/users
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 11:24:34 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/users/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 11:31:12 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Auth/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Auth/login.ctp',
+)
+Request URL: /chatsystem2/auth/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(AuthController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:56:00 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Auth/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Auth/login.ctp',
+)
+Request URL: /chatsystem2/auth/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(AuthController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 13:08:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/vagrant/works/chatsystem2/View/Auth/login.ctp, line 9]
+2013-12-13 13:08:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /chatsystem2/auth/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/w...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/w...', 9, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/w...', 9, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 15:17:56 Error: Fatal Error (1): Class 'Security' not found in [/home/vagrant/works/chatsystem2/Controller/AppController.php, line 4]
+2013-12-13 15:17:56 Error: [FatalErrorException] Class 'Security' not found
+Request URL: /chatsystem2/auth/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Security...', '/home/vagrant/w...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Security...', '/home/vagrant/w...', 4, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Security...', '/home/vagrant/w...', 4, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:52:23 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /home/vagrant/works/chatsystem2/View/Layouts/default.ctp(35): View->__get('Auth')
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/home/vagrant/w...')
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/home/vagrant/w...', Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(523): View->_render('/home/vagrant/w...')
+#6 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(468): View->renderLayout('', 'default')
+#7 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-12-13 17:29:13 Error: Fatal Error (1): Call to a member function isAuthorized() on a non-object in [/home/vagrant/works/chatsystem2/View/Layouts/default.ctp, line 35]
+2013-12-13 17:29:13 Error: [FatalErrorException] Call to a member function isAuthorized() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 35, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 35, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:17:16 Error: Fatal Error (1): Class 'AppModel' not found in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 5]
+2013-12-13 19:17:16 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /chatsystem2/room/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', '/home/vagrant/w...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', '/home/vagrant/w...', 5, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', '/home/vagrant/w...', 5, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:17:58 Error: Fatal Error (1): Call to undefined method App::users() in [/home/vagrant/works/chatsystem2/Model/Room.php, line 3]
+2013-12-13 19:17:58 Error: [FatalErrorException] Call to undefined method App::users()
+Request URL: /chatsystem2/room/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:18:23 Error: Fatal Error (1): Call to undefined method App::users() in [/home/vagrant/works/chatsystem2/Model/Room.php, line 3]
+2013-12-13 19:18:23 Error: [FatalErrorException] Call to undefined method App::users()
+Request URL: /chatsystem2/room/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:18:36 Error: [MissingControllerException] Controller class RoomController could not be found.
+Exception Attributes: array (
+  'class' => 'RoomController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/room/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 19:18:39 Error: Fatal Error (1): Call to undefined method App::users() in [/home/vagrant/works/chatsystem2/Model/Room.php, line 3]
+2013-12-13 19:18:39 Error: [FatalErrorException] Call to undefined method App::users()
+Request URL: /chatsystem2/room/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 3, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

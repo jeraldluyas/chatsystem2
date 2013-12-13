@@ -4,14 +4,18 @@ App::uses('AppController', 'Controller');
 
 class HomeController extends AppController {
 
-    public $uses = array();
+    public $uses = array('Room');
 
     public function index() {
-        try {
-            
-        } catch (Exception $e) {
-            die($e->getMessage());
+        if ($this->Auth->isAuthorized()) {
+        } else {
+            echo 'Not logged';
         }
+    }
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('index');
     }
 
 }
