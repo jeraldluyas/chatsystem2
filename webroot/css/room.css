@@ -1,0 +1,117 @@
+#chatbox{
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#screen{
+    padding: 10px;
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+#frmPost {
+    margin-top: 5px;
+}
+#frmPost input,
+#frmPost button{
+    font-size: 18px;
+    padding: 5px;
+    line-height: 30px;
+    height: 40px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-right: 0;
+    display: inline-block;
+    background-color: white;
+}
+#frmPost button:hover,
+#frmPost button:active{
+    background-color: #ddd;
+    border: white;
+}
+#frmPost input[type=text]{
+    width: 840px;
+}
+
+#frmPost button{
+    width: 100px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.post{
+    border-bottom: 1px dashed #eee;
+    padding: 0 5px;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.post .author{
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 10px;
+}
+.post .message{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #eee;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 0 10px 0 10px;
+    max-width: 650px;
+}
+.post .message.deleted{
+    font-style: italic;
+    color: #666;
+}
+.post .meta{
+    position: absolute;
+    bottom: 0; right: 0;
+    display: inline-block;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.edit, .delete{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.edit{
+    color: green;
+}
+
+.delete{
+    color: red;
+}
+#frmEditMessageWraper{
+    padding: 10px;
+    width: 400px;
+}
+#frmEditMessage{
+    text-align: center;
+}
+#frmEditMessage textarea{
+    width: 350px;
+    height: 80px;
+}
+#frmEditMessage button{
+    width: 80px;
+    padding: 4px;
+}

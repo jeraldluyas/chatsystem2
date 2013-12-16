@@ -7,15 +7,13 @@ class HomeController extends AppController {
     public $uses = array('Room');
 
     public function index() {
-        if ($this->Auth->isAuthorized()) {
-        } else {
-            echo 'Not logged';
-        }
+        $rooms = $this->Room->getAllRooms();
+        $this->set('rooms', $rooms);
     }
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('index');
+        // $this->Auth->allow('index');
     }
 
 }

@@ -157,3 +157,1159 @@ Stack Trace:
 #3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-16 10:56:53 Error: [MissingControllerException] Controller class CreateController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/create
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 11:16:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('All', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('All', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:16:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:22:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:27:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:27:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:27:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:27:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:29:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users User INNER Array  WHERE 1 = 1   ORDER BY `Room`.`room_id` DESC' at line 1
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(37): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:32:32 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'chatsystem.services_images' doesn't exist
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(41): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:33:10 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'chatsystem.uses' doesn't exist
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Room`.*...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Room`.*...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Room`.*...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Room), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Room.php(41): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/HomeController.php(11): Room->getAllRooms()
+#8 [internal function]: HomeController->index()
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:36:35 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [/home/vagrant/works/chatsystem2/Controller/HomeController.php, line 12]
+2013-12-16 11:36:35 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 12, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 12, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:11:31 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Room/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Room/index.ctp',
+)
+Request URL: /chatsystem2/room/index/2
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 12:43:35 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:43:35 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:44:24 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:44:24 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:44:24 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:44:24 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:46:26 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:46:26 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:46:26 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:46:26 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:46:26 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:46:26 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:47:04 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:47:04 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:47:05 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:47:05 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 12:47:05 Error: Fatal Error (1): Call to a member function css() on a non-object in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 17]
+2013-12-16 12:47:05 Error: [FatalErrorException] Call to a member function css() on a non-object
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 17, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:05:57 Error: [MissingComponentException] Component class StringUtilsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'StringUtilsComponent',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('StringUtils', Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(HomeController))
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:07:06 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [/home/vagrant/works/chatsystem2/Controller/HomeController.php, line 6]
+2013-12-16 15:07:06 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/w...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/w...', 6, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/w...', 6, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:07:17 Error: Fatal Error (1): Class 'StringUtils' not found in [/home/vagrant/works/chatsystem2/Controller/HomeController.php, line 15]
+2013-12-16 15:07:17 Error: [FatalErrorException] Class 'StringUtils' not found
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'StringUt...', '/home/vagrant/w...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'StringUt...', '/home/vagrant/w...', 15, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'StringUt...', '/home/vagrant/w...', 15, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:08:00 Error: [MissingComponentException] Component class StringUtilsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'StringUtilsComponent',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('StringUtils', Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(HomeController))
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:08:06 Error: [MissingComponentException] Component class StringUtilsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'StringUtilsComponent',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('StringUtils', Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(HomeController))
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:08:07 Error: [MissingComponentException] Component class StringUtilsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'StringUtilsComponent',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('StringUtils', Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(HomeController))
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:08:07 Error: [MissingComponentException] Component class StringUtilsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'StringUtilsComponent',
+  'plugin' => false,
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('StringUtils', Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(HomeController))
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:10:22 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:22 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:42 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:42 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:43 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:43 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:44 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:44 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:52 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:52 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:53 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:53 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:53 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:53 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:56 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:56 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:57 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:57 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:57 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:57 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:10:57 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:10:57 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:11:42 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:11:42 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:12:27 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:12:27 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:12:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:12:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:12:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:12:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:12:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:12:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:13:16 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 15:13:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:13:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/home/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:13:32 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:13:32 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/home/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:27 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:27 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/home/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/home/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:28 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:28 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/home/index
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:31 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:31 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:46 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:46 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:46 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:46 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:46 Error: Fatal Error (1): Call to a member function body() on a non-object in [/home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952]
+2013-12-16 15:14:46 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/vagrant/w...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/vagrant/w...', 952, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:15:50 Error: [MissingControllerException] Controller class CrController could not be found.
+Exception Attributes: array (
+  'class' => 'CrController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/cr
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 15:16:25 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/home/vagrant/works/chatsystem2/Controller/HomeController.php, line 12]
+2013-12-16 15:16:25 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/w...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/w...', 12, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/w...', 12, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:43:28 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp',
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName('message')
+#1 /home/vagrant/works/chatsystem2/Controller/HomeController.php(17): View->render('message')
+#2 [internal function]: HomeController->index()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-16 15:43:32 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp',
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName('message')
+#1 /home/vagrant/works/chatsystem2/Controller/HomeController.php(17): View->render('message')
+#2 [internal function]: HomeController->index()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-16 15:43:33 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp',
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName('message')
+#1 /home/vagrant/works/chatsystem2/Controller/HomeController.php(17): View->render('message')
+#2 [internal function]: HomeController->index()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-16 15:43:33 Error: [MissingViewException] View file "/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/works/chatsystem2/View/Message/message_list/message.ctp',
+)
+Request URL: /chatsystem2/
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName('message')
+#1 /home/vagrant/works/chatsystem2/Controller/HomeController.php(17): View->render('message')
+#2 [internal function]: HomeController->index()
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-16 15:49:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/2
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList(NULL)
+#7 [internal function]: RoomController->index('2')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:49:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/2
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('2')
+#7 [internal function]: RoomController->index('2')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:49:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('1')
+#7 [internal function]: RoomController->index('1')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:50:13 Error: Fatal Error (1): Call to undefined function vaf_dump() in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 11]
+2013-12-16 15:50:13 Error: [FatalErrorException] Call to undefined function vaf_dump()
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:50:39 Error: Fatal Error (1): Call to undefined function vaf_dump() in [/home/vagrant/works/chatsystem2/Controller/RoomController.php, line 11]
+2013-12-16 15:50:39 Error: [FatalErrorException] Call to undefined function vaf_dump()
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:50:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('1')
+#7 [internal function]: RoomController->index('1')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:53:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('1')
+#7 [internal function]: RoomController->index('1')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:53:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('1')
+#7 [internal function]: RoomController->index('1')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 15:53:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMessageList' at line 1
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMessageList', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getMessageList', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMessageList', Array, Array)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getMessageList', Array, Object(Message))
+#5 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Model->__call('getMessageList', Array)
+#6 /home/vagrant/works/chatsystem2/Controller/RoomController.php(13): Message->getMessageList('1')
+#7 [internal function]: RoomController->index('1')
+#8 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-16 16:02:14 Error: Fatal Error (1): Class 'Auth' not found in [/home/vagrant/works/chatsystem2/View/Message/message_list.ctp, line 7]
+2013-12-16 16:02:14 Error: [FatalErrorException] Class 'Auth' not found
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Auth' no...', '/home/vagrant/w...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Auth' no...', '/home/vagrant/w...', 7, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Auth' no...', '/home/vagrant/w...', 7, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 16:20:17 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in [/home/vagrant/works/chatsystem2/View/Layouts/default.ctp, line 29]
+2013-12-16 16:20:17 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+Request URL: /chatsystem2/room/index/2
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/w...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/w...', 29, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/w...', 29, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 16:38:34 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 16:57:02 Error: Fatal Error (1): Call to undefined method MessageController::data() in [/home/vagrant/works/chatsystem2/Controller/MessageController.php, line 11]
+2013-12-16 16:57:02 Error: [FatalErrorException] Call to undefined method MessageController::data()
+Request URL: /chatsystem2/message/insert
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 16:57:07 Error: Fatal Error (1): Call to undefined method MessageController::data() in [/home/vagrant/works/chatsystem2/Controller/MessageController.php, line 11]
+2013-12-16 16:57:07 Error: [FatalErrorException] Call to undefined method MessageController::data()
+Request URL: /chatsystem2/message/insert
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 16:57:39 Error: Fatal Error (1): Call to undefined method MessageController::data() in [/home/vagrant/works/chatsystem2/Controller/MessageController.php, line 11]
+2013-12-16 16:57:39 Error: [FatalErrorException] Call to undefined method MessageController::data()
+Request URL: /chatsystem2/message/insert
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 11, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 17:04:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '2Message.room_id' in 'where clause'
+Request URL: /chatsystem2/room/index/1
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Message...', Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `Message...', false)
+#4 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Message), Array)
+#5 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/works/chatsystem2/Model/Message.php(62): Model->find('all', Array)
+#7 /home/vagrant/works/chatsystem2/Controller/RoomController.php(16): Message->getMessages('1')
+#8 [internal function]: RoomController->index('1')
+#9 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#10 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 17:23:34 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 17:24:57 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 17:25:27 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 17:41:08 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:02:39 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:11:04 Error: [MissingControllerException] Controller class Message.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Message.phpController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/message.php
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:20:51 Error: Fatal Error (1): Call to undefined function vaf_dump() in [/home/vagrant/works/chatsystem2/Controller/MessageController.php, line 74]
+2013-12-16 18:20:51 Error: [FatalErrorException] Call to undefined function vaf_dump()
+Request URL: /chatsystem2/message/getMessage
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/vagrant/w...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/vagrant/w...', 74, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/vagrant/w...', 74, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 18:36:53 Error: [MissingControllerException] Controller class Chatsystem2Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Chatsystem2Controller',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/chatsystem2/lib/fancybox/jquery.fancybox-1.3.4.css
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:36:53 Error: [MissingControllerException] Controller class Chatsystem2Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Chatsystem2Controller',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/chatsystem2/lib/fancybox/jquery.fancybox-1.3.4.js
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:37:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/css/lib/fancybox/jquery.fancybox-1.3.4.css
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:37:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/js/lib/fancybox/jquery.fancybox-1.3.4.js
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 18:37:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /chatsystem2/css/lib/fancybox/jquery.fancybox-1.3.4.css
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 19:48:42 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [/home/vagrant/works/chatsystem2/View/Auth/login.ctp, line 10]
+2013-12-16 19:48:42 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /chatsystem2/auth/login
+Stack Trace:
+#0 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/w...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/w...', 10, Array)
+#2 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/w...', 10, Array)
+#3 /home/vagrant/works/chatsystem2/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

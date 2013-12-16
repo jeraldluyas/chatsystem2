@@ -2,7 +2,7 @@
 
 App::uses('Controller', 'Controller');
 App::uses('Security', 'Utility');
-Security::setHash('md5');
+Security::setHash(SECURITY_HASH_ALGORITHM);
 
 class AppController extends Controller {
 
@@ -19,6 +19,7 @@ class AppController extends Controller {
                 'plugin' => null,
             ),
         ),
+        'StringUtils',
     );
 
     public function isAuthorized() {
@@ -27,9 +28,7 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->set('auth', $this->Auth);
-        // Non logged in can access thesse action
-        // $this->Auth->allow('index', 'view');
+        $this->set('auth', $this->Auth);;
     }
 
 }

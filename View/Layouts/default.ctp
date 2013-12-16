@@ -13,18 +13,27 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     <head>
         <?php echo $this->Html->charset(); ?>
         <title>
-            <?php echo $cakeDescription ?>:
-            <?php echo $title_for_layout; ?>
+            <?php if(isset($title)) echo $title, ' - '; echo DEFAULT_TITLE; ?>
         </title>
         <?php
         echo $this->Html->meta('icon');
-
-        echo $this->Html->css('cake.generic');
+        echo $this->fetch('meta');
+        //echo $this->Html->css('cake.generic');
+        echo $this->Html->css('/lib/bootstrap/css/bootstrap');
+        echo $this->Html->css('/lib/bootstrap/css/bootstrap-theme');
         echo $this->Html->css('style');
         echo $this->Html->css('auth');
-
-        echo $this->fetch('meta');
         echo $this->fetch('css');
+        ?>
+        <?php
+        echo $this->Html->script('jquery-1.8.0');
+        echo $this->Html->script('/lib/bootstrap/js/bootstrap');
+        echo $this->Html->script('const');
+        ?>
+        <script type="text/javascript">
+            Const.SITE_URL = '<?php echo Router::url('/'); ?>';
+        </script>
+        <?php
         echo $this->fetch('script');
         ?>
     </head>
@@ -32,7 +41,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <div id="container">
             <div id="header">
                 <div id="top_nav">
-                    <?php echo $this->Html->link('HOME', array('controller' => 'home', 'action' => 'index')); ?> | 
+                    <?php echo $this->Html->link('HOME', array('controller' => 'home', 'action' => 'index')); ?> |
                     <?php if ($auth->isAuthorized()) { ?>
                         Hello <span class="username"><?php echo $auth->user('username'); ?></span>
                         <?php echo $this->Html->link('Logout', array('controller' => 'auth', 'action' => 'logout')); ?>
@@ -49,13 +58,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                 <?php echo $this->fetch('content'); ?>
             </div>
             <div id="footer">
-                <?php
-                echo $this->Html->link(
-                        $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')), 'http://www.cakephp.org/', array('target' => '_blank', 'escape' => false)
-                );
-                ?>
+
             </div>
         </div>
-        <?php echo $this->element('sql_dump'); ?>
+        <?php // echo $this->element('sql_dump'); ?>
     </body>
 </html>

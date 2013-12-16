@@ -1,5 +1,26 @@
+#header{
+    padding: 10px;
+    background-color: #31708f;
+    color: #acacac;
+    font-size: 18px;
+}
+
+#header a{
+    color: white;
+}
+#header .username{
+    color: chocolate;
+    font-weight: bold;
+}
+
+#content{
+    padding: 10px;
+}
 button,input[type=button],input[type=submit]{cursor: pointer;}
 a{text-decoration: none;}
 
 #top_nav{text-align: right;}
 
+#room-list{
+    margin-top: 15px;
+}
