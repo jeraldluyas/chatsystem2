@@ -15,6 +15,10 @@ class Room extends AppModel {
                 'rule' => array('maxLength', 255),
                 'message' => 'Room name cannot be greater than 255 characters'
             ),
+            'minLength' => array(
+                'rule' => array('minLength', 5),
+                'message' => 'Room name must be greater than 5 characters'
+            ),
         ),
     );
 

@@ -11,7 +11,7 @@ class AuthController extends AppController {
             if ($this->Auth->login()) {
                 $this->redirect($this->Auth->redirect());
             } else {
-                $this->Session->setFlash('Your username or password is not correct!');
+                $this->Session->setFlash('Your username or password is not correct!', 'flash/error');
             }
         }
     }
@@ -24,7 +24,7 @@ class AuthController extends AppController {
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->data)) {
-                $this->Session->setFlash("New User Created!");
+                $this->Session->setFlash("New User Created!", 'flash/success');
                 $this->redirect(array('action' => 'login'));
             }
         }

@@ -39,7 +39,7 @@ class RoomController extends AppController {
                 $this->Session->setFlash('Add new room succssfully!');
                 $this->redirect(array('controller' => 'home', 'action' => 'index'));
             } else {
-                $this->Session->setFlash('Add new room failed!!!');
+                $this->Session->setFlash('Add new room failed!!!', 'flash/error');
             }
         }
     }

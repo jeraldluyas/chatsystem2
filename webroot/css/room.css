@@ -22,33 +22,9 @@
 #frmPost {
     margin-top: 5px;
 }
-#frmPost input,
-#frmPost button{
-    font-size: 18px;
-    padding: 5px;
-    line-height: 30px;
-    height: 40px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-right: 0;
-    display: inline-block;
-    background-color: white;
-}
-#frmPost button:hover,
-#frmPost button:active{
-    background-color: #ddd;
-    border: white;
-}
-#frmPost input[type=text]{
-    width: 840px;
-}
 
 #frmPost button{
     width: 100px;
-    border: 1px solid #ccc;
     cursor: pointer;
 }
 
@@ -101,17 +77,23 @@
     color: red;
 }
 #frmEditMessageWraper{
-    padding: 10px;
-    width: 400px;
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px auto;
+    width: 500px;
+    overflow: hidden;
 }
 #frmEditMessage{
-    text-align: center;
 }
 #frmEditMessage textarea{
-    width: 350px;
+    width: 400px;
+    display: block;
+    margin: 10px;
     height: 80px;
 }
 #frmEditMessage button{
     width: 80px;
-    padding: 4px;
 }

@@ -5,7 +5,7 @@
         <p class="meta">
             <span class="mod_action">
                 <?php if ($message['Message']['user_id'] == $auth->user('user_id')) { ?>
-                    <span class="edit" onclick="show_edit_popup('<?php echo $message['Message']['message_id']; ?>')">[ Edit ]</span>
+                    <span class="edit" onclick="show_edit_form('<?php echo $message['Message']['message_id']; ?>')">[ Edit ]</span>
                     <span class="delete" onclick="delete_message('<?php echo $message['Message']['message_id']; ?>')"> [ Delete ]</span> |
                 <?php } ?>
             </span>

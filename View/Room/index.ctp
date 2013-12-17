@@ -10,9 +10,25 @@
         </div>
         <div id="input">
             <form id="frmPost" onsubmit="return false;">
-                <input type="text" id="message" name="message" value=""><!--
-                --><button type="submit" id="btn_send">Send</button>
+                <div class="input-group">
+                    <input  type="text" id="message" name="message" value="" class="form-control"><!--
+                    --><span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="btn_send" >Send</button>
+                    </span>
+                </div>
             </form>
+        </div>
+        <div id="frmEditMessageWraper" style="width: 500px;">
+            <from id="frmEditMessage" onsubmit="return false;">
+            <div class="form-group">
+                <label>Edit message:</label>
+                <textarea class="form-control" id="new_message"></textarea>
+                <input type="hidden" id="edit_message_id" value="">
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <button type="button" class="btn btn-primary" onclick="save();">Save</button>
+                <button type="button" class="btn btn-primary" onclick="close_edit_form()">Cancel</button>
+            </div></form>
         </div>
     </div>
     <form id="frmRefresh" method="post" onsubmit="return false;" style="display: none;">

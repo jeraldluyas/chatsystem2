@@ -130,21 +130,22 @@ function delete_message(message_id) {
     });
 }
 
-function show_edit_popup(message_id) {
+function show_edit_form(message_id){
     var element = $('.post[data-id=' + message_id + ']');
     var message = element.find('p.message').text();
-    var html = '<div id="frmEditMessageWraper"><from id="frmEditMessage" onsubmit="return false;">\n\
-    <div><textarea id="new_message">' + message + '</textarea></div>\n\
-    <div><button type="button" onclick="save(\'' + message_id + '\');">Save</button>\n\
-    <button type="button" onclick="$.fancybox.close();">Cancel</button>\n\
-    </div></form></div>';
-    $.fancybox({
-        content: html
-    });
+    $('#edit_message_id').val(message_id);
+    $('#new_message').val(message);
+    $('#frmEditMessageWraper').show();
+    $('#new_message').focus();
 }
 
-function save(message_id) {
+function close_edit_form(){
+    $('#frmEditMessageWraper').hide();
+}
+
+function save() {
     var new_message = jQuery.trim($('#new_message').val());
+    var message_id = $('#edit_message_id').val();
     if (new_message.length == 0) {
         alert('Message cannot be blank, if you want to remove this message, you can delete it.');
         return false;
@@ -163,7 +164,7 @@ function edit_message(message_id, new_message) {
         },
         success: function(response) {
             if (response.status === 'success') {
-                $.fancybox.close();
+                close_edit_form();
                 getMessage();
             } else {
                 alert(data.error);

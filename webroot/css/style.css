@@ -24,3 +24,8 @@ a{text-decoration: none;}
 #room-list{
     margin-top: 15px;
 }
+
+.error-message{
+    color: red;
+}
+
